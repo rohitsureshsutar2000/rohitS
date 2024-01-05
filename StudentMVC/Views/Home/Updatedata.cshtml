@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Update Page";
+}
+
+<div class="text-center">
+    <form method="post">
+        <h5>Id</h5>
+        <input type="text" name="Id" />
+        <h5>Name</h5>
+        <input type="text" name="Name" />
+        <h5>mobile</h5>
+        <input type="text"  name="Mobile"/><br>
+        <button type="submit"> Submit</button>
+  </form> 
+  @{
+    string s= ViewData["Updateddata"] as string;
+    <br>
+    <h3>@s</h3>
+  }
+</div>

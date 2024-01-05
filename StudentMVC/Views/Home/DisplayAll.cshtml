@@ -1,0 +1,15 @@
+@using models;
+@{
+    ViewData["Title"] = "Delete Page";
+}
+
+@{
+    List<Student> lst=ViewData["dataAll"] as List<Student>;
+    @foreach(Student student in lst)
+    {
+        <p>@student.Id</p>
+        <p>@student.Name</p>
+        <p>@student.Mobile</p>
+        <p>-------------------------</p>
+    }
+}
